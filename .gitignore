@@ -1,7 +1,6 @@
 # --- Project Specific ---
 application.properties
-logs/
-*.log
+
 
 
 HELP.md
