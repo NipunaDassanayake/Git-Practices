@@ -13,5 +13,6 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    // Added price field to Product entity
     private Double price;
 }
