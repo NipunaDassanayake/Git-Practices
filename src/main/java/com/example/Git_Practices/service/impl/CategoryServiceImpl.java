@@ -1,6 +1,7 @@
 package com.example.Git_Practices.service.impl;
 import com.example.Git_Practices.controller.dto.request.CategoryRequestDTO;
 import com.example.Git_Practices.controller.dto.response.CategoryResponseDTO;
+import com.example.Git_Practices.exception.CategoryAlreadyExistsException;
 import com.example.Git_Practices.model.Category;
 import com.example.Git_Practices.repository.CategoryRepository;
 import com.example.Git_Practices.service.CategoryService;
@@ -20,8 +21,7 @@ public class CategoryServiceImpl implements CategoryService {
     public Category createCategory(CategoryRequestDTO requestDTO) {
 
         if (categoryRepository.existsByTitle(requestDTO.getTitle())) {
-            throw new RuntimeException("Category with title '" + requestDTO.getTitle() + "' already exists.");
-        }
+            throw new CategoryAlreadyExistsException(requestDTO.getTitle());        }
         Category category = new Category();
         category.setTitle(requestDTO.getTitle());
         return categoryRepository.save(category);
