@@ -13,6 +13,7 @@ public class Product {
     // Added price field to Product entity
     private Double price;
 
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
