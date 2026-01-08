@@ -21,16 +21,20 @@ public class ProductServiceImpl implements ProductService {
 
 
     @Override
-    public Product createProduct(NewProductRequestDTO requestDTO) {
-        Category category = categoryRepository.findById(requestDTO.getCategoryId()).orElseThrow(()-> new RuntimeException("Category Not Found"));
+    public ProductResponseDTO createProduct(NewProductRequestDTO requestDTO) {
+        Category category = categoryRepository.findById(requestDTO.getCategoryId())
+                .orElseThrow(() -> new RuntimeException("Category Not Found"));
 
         Product product = new Product();
         product.setName(requestDTO.getName());
         product.setPrice(requestDTO.getPrice());
         product.setDescription(requestDTO.getDescription());
         product.setCategory(category);
-        return productRepository.save(product);
 
+        Product savedProduct = productRepository.save(product);
+
+        // Convert the saved entity to the Response DTO
+        return mapToResponseDTO(savedProduct);
     }
 
     @Override

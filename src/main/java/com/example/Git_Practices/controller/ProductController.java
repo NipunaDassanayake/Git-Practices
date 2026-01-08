@@ -18,10 +18,9 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody NewProductRequestDTO requestDTO) {
-        // Calling the service method we just committed
-        Product createdProduct = productService.createProduct(requestDTO);
-        return new ResponseEntity<>(createdProduct, HttpStatus.CREATED);
+    public ResponseEntity<ProductResponseDTO> createProduct(@RequestBody NewProductRequestDTO requestDTO) {
+        ProductResponseDTO response = productService.createProduct(requestDTO);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @GetMapping

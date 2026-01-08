@@ -1,5 +1,7 @@
 package com.example.Git_Practices.service.impl;
 import com.example.Git_Practices.controller.dto.request.CategoryRequestDTO;
+import com.example.Git_Practices.controller.dto.response.CategoryResponseDTO;
+import com.example.Git_Practices.exception.CategoryAlreadyExistsException;
 import com.example.Git_Practices.model.Category;
 import com.example.Git_Practices.repository.CategoryRepository;
 import com.example.Git_Practices.service.CategoryService;
@@ -7,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -16,13 +19,22 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category createCategory(CategoryRequestDTO requestDTO) {
+
+        if (categoryRepository.existsByTitle(requestDTO.getTitle())) {
+            throw new CategoryAlreadyExistsException(requestDTO.getTitle());        }
         Category category = new Category();
         category.setTitle(requestDTO.getTitle());
         return categoryRepository.save(category);
     }
 
     @Override
-    public List<Category> getAllCategories() {
-        return categoryRepository.findAll();
+    public List<CategoryResponseDTO> getAllCategories() {
+        return categoryRepository.findAll().stream()
+                .map(category -> {
+                    CategoryResponseDTO dto = new CategoryResponseDTO();
+                    dto.setId(category.getId());
+                    dto.setTitle(category.getTitle());
+                    return dto;
+                }).collect(Collectors.toList());
     }
 }
