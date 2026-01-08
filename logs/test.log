@@ -146,3 +146,88 @@
 2026-01-08T14:23:15.996+05:30  INFO 4792 --- [Git-Practices] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-01-08T14:23:15.997+05:30  INFO 4792 --- [Git-Practices] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2026-01-08T14:23:16.223+05:30  WARN 4792 --- [Git-Practices] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Cannot lazily initialize collection of role 'com.example.Git_Practices.model.Category.products' with key '1' (no session)]
+2026-01-08T14:33:26.591+05:30  WARN 4792 --- [Git-Practices] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Cannot lazily initialize collection of role 'com.example.Git_Practices.model.Category.products' with key '1' (no session)]
+2026-01-08T14:48:36.730+05:30  INFO 4792 --- [Git-Practices] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08T14:48:36.734+05:30  INFO 4792 --- [Git-Practices] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-08T14:48:36.734+05:30  INFO 4792 --- [Git-Practices] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T14:48:36.734+05:30  INFO 4792 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-08T14:48:36.734+05:30  INFO 4792 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-08T14:48:44.409+05:30  INFO 21800 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Starting GitPracticesApplication using Java 21.0.9 with PID 21800 (C:\Users\ASUS\Downloads\Git-Practices\Git-Practices\target\classes started by ASUS in C:\Users\ASUS\Downloads\Git-Practices\Git-Practices)
+2026-01-08T14:48:44.409+05:30  INFO 21800 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-01-08T14:48:44.794+05:30  INFO 21800 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-08T14:48:44.841+05:30  INFO 21800 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-01-08T14:48:45.111+05:30  INFO 21800 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-08T14:48:45.111+05:30  INFO 21800 --- [Git-Practices] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-08T14:48:45.111+05:30  INFO 21800 --- [Git-Practices] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-08T14:48:45.158+05:30  INFO 21800 --- [Git-Practices] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 711 ms
+2026-01-08T14:48:45.265+05:30  INFO 21800 --- [Git-Practices] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-08T14:48:45.281+05:30  INFO 21800 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-08T14:48:45.580+05:30  INFO 21800 --- [Git-Practices] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-08T14:48:45.596+05:30  INFO 21800 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-08T14:48:45.714+05:30  INFO 21800 --- [Git-Practices] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7769d9b6
+2026-01-08T14:48:45.716+05:30  INFO 21800 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-08T14:48:45.762+05:30  INFO 21800 --- [Git-Practices] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3306/gitdb?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: gitdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-08T14:48:46.327+05:30  INFO 21800 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-08T14:48:46.379+05:30  INFO 21800 --- [Git-Practices] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T14:48:46.427+05:30  INFO 21800 --- [Git-Practices] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-08T14:48:46.780+05:30  INFO 21800 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-08T14:48:46.780+05:30  INFO 21800 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Started GitPracticesApplication in 2.683 seconds (process running for 2.96)
+2026-01-08T14:49:21.335+05:30  INFO 21800 --- [Git-Practices] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-08T14:49:21.336+05:30  INFO 21800 --- [Git-Practices] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-08T14:49:21.337+05:30  INFO 21800 --- [Git-Practices] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-08T14:49:21.598+05:30  WARN 21800 --- [Git-Practices] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Cannot lazily initialize collection of role 'com.example.Git_Practices.model.Category.products' with key '1' (no session)]
+2026-01-08T14:51:29.012+05:30  INFO 21800 --- [Git-Practices] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08T14:51:29.012+05:30  INFO 21800 --- [Git-Practices] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-08T14:51:29.012+05:30  INFO 21800 --- [Git-Practices] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T14:51:29.012+05:30  INFO 21800 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-08T14:51:29.028+05:30  INFO 21800 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-08T14:51:36.313+05:30  INFO 3704 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Starting GitPracticesApplication using Java 21.0.9 with PID 3704 (C:\Users\ASUS\Downloads\Git-Practices\Git-Practices\target\classes started by ASUS in C:\Users\ASUS\Downloads\Git-Practices\Git-Practices)
+2026-01-08T14:51:36.313+05:30  INFO 3704 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-01-08T14:51:36.706+05:30  INFO 3704 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-08T14:51:36.741+05:30  INFO 3704 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2026-01-08T14:51:37.025+05:30  INFO 3704 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-08T14:51:37.025+05:30  INFO 3704 --- [Git-Practices] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-08T14:51:37.025+05:30  INFO 3704 --- [Git-Practices] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-08T14:51:37.072+05:30  INFO 3704 --- [Git-Practices] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 728 ms
+2026-01-08T14:51:37.168+05:30  INFO 3704 --- [Git-Practices] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-08T14:51:37.207+05:30  INFO 3704 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-08T14:51:37.487+05:30  INFO 3704 --- [Git-Practices] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-08T14:51:37.510+05:30  INFO 3704 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-08T14:51:37.620+05:30  INFO 3704 --- [Git-Practices] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7769d9b6
+2026-01-08T14:51:37.620+05:30  INFO 3704 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-08T14:51:37.667+05:30  INFO 3704 --- [Git-Practices] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3306/gitdb?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: gitdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-08T14:51:38.235+05:30  INFO 3704 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-08T14:51:38.273+05:30  INFO 3704 --- [Git-Practices] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T14:51:38.335+05:30  INFO 3704 --- [Git-Practices] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-08T14:51:38.675+05:30  INFO 3704 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-08T14:51:38.675+05:30  INFO 3704 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Started GitPracticesApplication in 2.678 seconds (process running for 2.944)
+2026-01-08T14:51:58.275+05:30  INFO 3704 --- [Git-Practices] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-08T14:51:58.275+05:30  INFO 3704 --- [Git-Practices] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-08T14:51:58.276+05:30  INFO 3704 --- [Git-Practices] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-08T14:52:20.681+05:30  INFO 3704 --- [Git-Practices] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08T14:52:20.681+05:30  INFO 3704 --- [Git-Practices] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-08T14:52:20.681+05:30  INFO 3704 --- [Git-Practices] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T14:52:20.681+05:30  INFO 3704 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-08T14:52:20.700+05:30  INFO 3704 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

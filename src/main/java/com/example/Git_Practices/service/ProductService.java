@@ -8,6 +8,6 @@ import com.example.Git_Practices.model.Product;
 import java.util.List;
 
 public interface ProductService {
-    public Product createProduct(NewProductRequestDTO requestDTO);
+    public ProductResponseDTO createProduct(NewProductRequestDTO requestDTO);
     public List<ProductResponseDTO> getAllProducts();
 }
