@@ -16,6 +16,10 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category createCategory(CategoryRequestDTO requestDTO) {
+
+        if (categoryRepository.existsByTitle(requestDTO.getTitle())) {
+            throw new RuntimeException("Category with title '" + requestDTO.getTitle() + "' already exists.");
+        }
         Category category = new Category();
         category.setTitle(requestDTO.getTitle());
         return categoryRepository.save(category);

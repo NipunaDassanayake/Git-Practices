@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
     // Spring generates all CRUD methods automatically!
+    boolean existsByTitle(String title);
     Category findByTitle(String title);
 }
