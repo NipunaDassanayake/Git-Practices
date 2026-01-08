@@ -1,9 +1,6 @@
 package com.example.Git_Practices.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -15,4 +12,9 @@ public class Product {
     private String name;
     // Added price field to Product entity
     private Double price;
+
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 }

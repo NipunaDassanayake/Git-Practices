@@ -1,7 +1,7 @@
 # --- Project Specific ---
 application.properties
 
-
+logs/
 
 HELP.md
 target/
