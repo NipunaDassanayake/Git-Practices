@@ -18,4 +18,9 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+
+    public boolean isValidPrice() {
+        return this.price > 0;
+    }
 }
