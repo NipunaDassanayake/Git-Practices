@@ -34,3 +34,39 @@
 2026-01-08T10:14:37.003+05:30  INFO 12504 --- [Git-Practices] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-08T10:14:37.003+05:30  INFO 12504 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-01-08T10:14:37.019+05:30  INFO 12504 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-08T12:02:02.706+05:30  INFO 19420 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Starting GitPracticesApplication using Java 21.0.9 with PID 19420 (C:\Users\ASUS\Downloads\Git-Practices\Git-Practices\target\classes started by ASUS in C:\Users\ASUS\Downloads\Git-Practices\Git-Practices)
+2026-01-08T12:02:02.709+05:30  INFO 19420 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-01-08T12:02:03.051+05:30  INFO 19420 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-08T12:02:03.094+05:30  INFO 19420 --- [Git-Practices] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2026-01-08T12:02:03.377+05:30  INFO 19420 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-01-08T12:02:03.389+05:30  INFO 19420 --- [Git-Practices] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-08T12:02:03.389+05:30  INFO 19420 --- [Git-Practices] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-08T12:02:03.420+05:30  INFO 19420 --- [Git-Practices] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 677 ms
+2026-01-08T12:02:03.531+05:30  INFO 19420 --- [Git-Practices] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-08T12:02:03.563+05:30  INFO 19420 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-08T12:02:03.831+05:30  INFO 19420 --- [Git-Practices] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-08T12:02:03.862+05:30  INFO 19420 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-08T12:02:03.972+05:30  INFO 19420 --- [Git-Practices] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334b392d
+2026-01-08T12:02:03.972+05:30  INFO 19420 --- [Git-Practices] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-08T12:02:04.038+05:30  INFO 19420 --- [Git-Practices] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3306/gitdb?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: gitdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-08T12:02:04.615+05:30  INFO 19420 --- [Git-Practices] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-08T12:02:04.681+05:30  INFO 19420 --- [Git-Practices] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T12:02:04.743+05:30  INFO 19420 --- [Git-Practices] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-08T12:02:05.041+05:30  INFO 19420 --- [Git-Practices] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-01-08T12:02:05.041+05:30  INFO 19420 --- [Git-Practices] [main] c.e.G.GitPracticesApplication            : Started GitPracticesApplication in 2.618 seconds (process running for 2.854)
+2026-01-08T12:15:20.721+05:30  INFO 19420 --- [Git-Practices] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08T12:15:20.741+05:30  INFO 19420 --- [Git-Practices] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-01-08T12:15:20.744+05:30  INFO 19420 --- [Git-Practices] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T12:15:20.746+05:30  INFO 19420 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-08T12:15:20.753+05:30  INFO 19420 --- [Git-Practices] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
