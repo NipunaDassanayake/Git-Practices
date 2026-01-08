@@ -1,12 +1,17 @@
 package com.example.Git_Practices.model;
 
+
 import jakarta.persistence.*;
+import lombok.Data;
+
+import java.util.ArrayList;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 @Entity
 @Getter
 @Setter
@@ -19,17 +24,6 @@ public class Category {
     @Column(nullable = false, unique = true)
     private String title;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
-
-    // Helper method to synchronize both sides of the relationship
-    public void addProduct(Product product) {
-        products.add(product);
-        product.setCategory(this);
-    }
-
-    public void removeProduct(Product product) {
-        products.remove(product);
-        product.setCategory(null);
-    }
 }
