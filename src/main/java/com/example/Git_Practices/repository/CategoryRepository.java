@@ -5,5 +5,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
-    // JpaRepository gives us save(), findAll(), findById(), etc. for free!
+    // Spring generates all CRUD methods automatically!
+    Category findByTitle(String title);
 }
